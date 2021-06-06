@@ -1,33 +1,30 @@
 <!doctype html>
 <html lang="en">
-    <!-- Standard head attributes and links -->
-    <head>
+    
+<head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="styls.css" />
-        <title>Code Quiz</title>
+        <title>API Code Quiz</title>
     </head>
 
 <body>
     <div class= "container" id="container">
         
-        <!-- High score link to view high scores -->
         <div id="highScoreHeader" style="display: block">
             <div class="row"><div class="col-12 text-left"><p>View High Scores</p></div></div>
         </div>
         
-        <!-- Start quiz and initiate the coding challenge   -->
         <div id="start" style="display: block">
             <div class="row"><div class="col-12 text-center"><p id=startHeader>Coding Quiz Challenge</p></div></div>
             <div class="row"><div class="col-12 text-center"><p id="startText">Try to answer the following code-related questions within the time limit.  Keep in mind that incorrect answers will penalize your scoretime by ten seconds!</p></div></div>
             <div class="row"><div class="col-12 text-center"><button class="btn quizBtn" id="startBtn">Start Quiz</button></div></div>
         </div>
         
-        <!-- Quiz div to display questions and select answers -->
         <div id="quiz" style="display: none">            
-            <!-- Display question and timer -->
+        
             <div class="row">
                 <div class="col-8"><div id="question"> <p> Question </p> </div></div>
                 <div class="col-4">
@@ -38,7 +35,7 @@
                     </div>
                 </div>
             </div>            
-            <!-- Display choices -->
+        
             <div class="row">
                 <div class="col-12">
                     <div id="choices">
@@ -50,14 +47,13 @@
                 </div>
             </div>
             <hr>
-            <!-- Display last question result and progress bar -->
+        
             <div class="row">
                 <div class="col-3"><div id="lastQuestGrade"></div></div>
                 <div class="col-9"><div id="progress"></div></div>
             </div>
         </div> 
        
-        <!-- Display final results -->
         <div id="scoreContainer" style="display: none">
             <div class="row"><div class="col-12 text-center"><p id=scoreHeader>All Done!</p></div></div>
             <div class="row"><div class="col-12 mb-2" id="quizScore"></div></div>            
@@ -76,7 +72,6 @@
             </div>
         </div>
 
-        <!-- Display listing of high scores -->
         <div id="highScoreContainer" style="display: none">
             <div class="row"><div class="col-12 text-center"><p id=highScoreListHeader>Highscores</p></div></div>
             <div class="row">
